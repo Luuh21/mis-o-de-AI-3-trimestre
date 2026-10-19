@@ -1,4 +1,4 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPrincipal = document.querySelector(".caixa-Principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-Alternativas");
 const caixaResultado = document.querySelector(".caixa-Resultado");
@@ -6,48 +6,48 @@ const textoResultado = document.querySelector(".texto-Resultado");
 
 const perguntas = [
 {
-    enunciado : "pergunta 1",
+    enunciado : "📚 Qual matéria você prefere?",
     alternativas : [
-        "alternativa 1",
-        "alternativa 2"
+        "🧮 A) Matemática",
+        "📝 B) Português"
     ]
 },
 
 {
-    enunciado : "pergunta 2",
+    enunciado : "🥤 Qual bebida você prefere?",
     alternativas : [
-        "alternativa 1",
-        "alternativa 2"
+        "🧃 A) Suco",
+        "🥤 B) Refrigerante"
     ]
 },
 {
-    enunciado : "pergunta 3",
+    enunciado : "⚽ Qual esporte você gosta mais?",
     alternativas : [
-        "alternativa 1",
-        "alternativa 2"
+        "⚽ A) Futebol",
+        "🏐 B) Vôlei"
     ]
 },
 {
-    enunciado : "pergunta 4",
+    enunciado : " 🌴 Onde você prefere viajar?",
     alternativas : [
-        "alternativa 1",
-        "alternativa 2"
+        "🏖️ A) Praia",
+        "🌳 B) Campo"
     ]
 },
 {
-    enunciado : "pergunta 5",
+    enunciado : " 🌞 Qual período do dia você prefere?",
     alternativas : [
-        "alternativa 1",
-        "alternativa 2"
+        "☀️ A) Dia",
+        "🌙 B) Noite"
     ]
 }
-]
+];
 let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta() {
-    perguntaAtual = perguntas [atual];
-    caixaPergunta.textContent = perguntaAtual.enunciado;
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
 
-motraPergunta();
+mostraPergunta();
